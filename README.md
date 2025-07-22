@@ -16,6 +16,7 @@ This is a fully animated, interactive, 3D developer portfolio. It's more than a 
   </div>
 </div>
 <br/>
+
 ---
 
 ## 🚀 Tech Stack
