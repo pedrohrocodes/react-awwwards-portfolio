@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { socials } from "../constants";
 
 const Navbar = () => {
   const navRef = useRef(null);
@@ -37,7 +38,17 @@ const Navbar = () => {
         </div>
         <div className="font-light">
           <p className="tracking-wider text-white/50">Social Media</p>
-          <div className="flex flex-col flex-wrap md:flex-row gap-x-2"></div>
+          <div className="flex flex-col flex-wrap md:flex-row gap-x-2">
+            {socials.map((social, index) => (
+              <a
+                key={index}
+                href={social.href}
+                className="text-sm leading-loose tracking-widest uppercase hover:text-white transition-colors duration-300"
+              >
+                {social.name}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </nav>
